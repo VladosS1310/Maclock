@@ -1,0 +1,28 @@
+// /**
+//  * Copyright © 2019 Studio Raz. All rights reserved.
+//  * See LICENSE.txt for license details.
+//  */
+
+& when (@media-common = true) {
+    .breadcrumbs {
+        a,
+        a:visited {
+            color: @base-color-dusty-gray;
+            .lib-font-size(14);
+
+            &:hover {
+                color: @color-black;
+            }
+        }
+
+        .item:not(:last-child):after {
+            color: @base-color-dusty-gray;
+            .lib-font-size(14);
+        }
+
+        strong {
+            color: @base-color-dusty-gray;
+            .lib-font-size(14);
+        }
+    }
+}

@@ -1,0 +1,74 @@
+& when (@media-common = true) {
+    .cms-index-index {
+        .page-wrapper {
+            .page-main {
+                .centered-paragraph {
+                    font-family: @font-family-name__secondary;
+                    font-size: 22px;
+                    line-height: 1.57;
+                    color: @base-color-black;
+                    text-align: center;
+                    padding: 5% 15%;
+                }
+                .banners-item-title {
+                    margin-bottom: 24px;
+                    display: inline-block;
+                    width: 100%;
+                    span {
+                        font-family: @font-family-name__secondary-medium;
+                        font-weight: @font-weight__heavier;
+                        font-size: 22px;
+                        color: @base-color-black;
+                    }
+                }
+
+                .banners-item-panel {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    .banners-item-description {
+                        font-family: @font-family-name__secondary-medium;
+                        font-weight: @font-weight__heavier;
+                        font-size: 16px;
+                        color: @base-color-cod-gray6;
+                        max-width: 282px;
+                    }
+                }
+
+                .sub-headings {
+                    font-size: 3rem;
+                    text-transform: unset;
+                }
+                .centered-paragraph-below {
+                    font-size: 2.3rem;
+                }
+                h2 {
+                    .lib-font-size(30) !important;
+                }
+            }
+        }
+    }
+}
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .cms-index-index {
+        .page-wrapper {
+            .page-main {
+                .sub-headings {
+                    strong {
+                        .lib-font-size(36);
+                        font-family: @font-family__base-medium;
+                        font-weight: @font-weight__heavier;
+                        color: @base-color-black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 834px) {
+    .centered-paragraph {
+        padding: 5% 3% 3% 3%;
+    }
+}
